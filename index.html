@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link  rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid tool">
+      <a class="navbar-brand" href="index.html"><span class="navbar-brand mb-0 h1"><img src="logo-tool.png" alt="" class="d-inline-block align-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link p-2 active" onclick="show('home')" aria-current="page" href="#"><span class="tooltitles">Accueil</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#" onclick="show('skills')" ><span class="tooltitles">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#" onclick="show('exp')"><span class="tooltitles">Expériences</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#" onclick="show('education')"><span class="tooltitles">Formations</span></a>
+          </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <img class="rounded-circle" alt="100x100" src="pic.jpg"
+          data-holder-rendered="true"><br>
+          <p>Halima Brémond</p>
+        </div>
+      <div class="col-sm-8">
+        <p class="text-small mt-2 font-weight-light">Bienvenue sur mon site destiné à retracer mon parcours professionnel.</p>
+        <p class="text-small mt-2 font-weight-light">Ma passion pour l'informatique remonte à mon enfance. Ma passion pour la programmation a toujours été un atout pour moi, surnommée « bosseuse » par mes professeurs, classée parmi les premiers dans mon master.</p>
+        <p class="text-small mt-2 font-weight-light">La passion que j'ai pour ce monde me permet d'aller jusqu'au bout des projets que j'entreprends et m'oblige à m'intéresser aux transformations de l'informatique.</p>
+        <p class="text-small mt-2 font-weight-light">Chère visiteuse, cher visiteur je vous souhaite une bonne visite.</p></div>
+    </div>
+    <div class="row" id="home_pics">
+      <div class ="col-sm-12">
+        <div class="col-sm-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="companies.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="skills.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div id="skills">
+  <div class="container">
+    
+    <ul class="tilesWrap">
+      <li>
+        <h2>C#</h2>
+        <h3>Langages de Programmation</h3>
+        <p>
+          C/C++, C#, JAVA, JavaScript, VB, VBA, Ladder, List <br> <p>Base de Données : SQL Server, Oracle.</p>
+        </p>
+        <button>C#</button>
+      </li>
+      <li>
+        <h2>.Net</h2>
+        <h3>Environnement Web/Windows</h3>
+        <p>
+         ASP.NET Core, WPF(XAML), WinForms, HTML, CSS, Bootstrap,jQuery, Kendo UI.
+        </p>
+        <button>.Net</button>
+      </li>
+      <li>
+        <h2>V</h2>
+        <h3>Gestion de Projet - Modélisation</h3>
+        <p>
+         MVVM/MVC, UML, Maquettage, Méthodologie (Cycle en V, Agilité Kanban, Scrum), SVN, GIT/Github.
+        </p>
+        <button>V</button>
+      </li>
+      <li>
+        <h2>V.S</h2>
+        <h3>Logiciels</h3>
+        <p>
+          Visual Studio, net Beans, Code::Blocks, Eclipse, Rslogix 500/5000 , Scilab, Matlab, Step 7, Tia portal, Quartus, 
+          Xilinx ISE Design, Unity_Pro, Cadence, SAP, Oracle SQL Developer , SQL Server Management, Trello.
+        </p>
+        <button>V.S</button>
+      </li>
+    </ul>
+     
+  </div> 
+</div>
+
+<div id="exp">
+  <div class="container ">
+    <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <ul class="timeline">
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                    <div class="timeline-arrow"></div>
+                    <h2 class="h5 mb-0">Ingénieure Développement<br>Topsolid</h2><span class="small text-gray"></span>
+                    <p class="text-small mt-2 font-weight-light">Développement des bases Post-Processeurs de Topsolid (conception et fabrication assistées par ordinateur). Support Post-Processeurs en France et à l’international (Italie, USA, Inde, Japon …). Outils : C#/Linq, INI, ISO, Topsolid.</p>
+                  </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="h5 mb-0">Ingénieure Développement<br>Cabinet Lavoix </h2><span class="small text-gray"></span>
+                        <p class="text-small mt-2 font-weight-light">Programmation des modules d’un progiciel ERP dans le domaine de la gestion de la propriété industrielle, Recueil des besoins, Méthodologie Agile kanban, Rédaction de la documentation technique, Outils : C#, WPF(XAML), WinForms,.Net Core/API, JAVASCRIPT, Bases de données (Oracle, SQL Server).</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="h5 mb-0">Ingénieure Automatismes / Systèmes Informatisés <br>Guerbet (Industrie Pharmaceutique)</h2><span class="small text-gray"></span>
+                        <p class="text-small mt-2 font-weight-light">Programmation et maintenance des systèmes informatisés/automatisés, Environnement : Langages (VB, List, Ladder), MES (pharmacim), Siemens (Step 7, Tia portal, Wincc), Gestion de Projets : recueil des besoins, rédaction des spécifications fonctionnelles et techniques, planning, contact 
+                          fournisseurs, rédaction des manuels de formation, formation des utilisateurs, réalisation de tests.  </p>    
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="h5 mb-0">Stagiaire Ingénieure Informatique Industrielle<br>Merck & Co (Industrie Pharmaceutique), Actemium</h2><span class="small text-gray"></span>
+                        <p class="text-small mt-2 font-weight-light">Réalisation d’une étude de faisabilité pour relier des équipements de laboratoire critiques au système d’historisation PI : Programmation des automates Schneider, SCADA Wonderware/InTouch, Configuration Serveur OPC (KEPWARE), Conduite de projet : rédaction d’un cahier des charges, contact fournisseur, évaluation des coûts, échéancier du projet, Participation à l’innovation d’un logiciel GED. Outils : C#, WPF(XAML), SQL Server.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <h2 class="h5 mb-0">Ingénieure de Recherches<br>IMS de Bordeaux</h2><span class="small text-gray"></span>
+                      <p class="text-small mt-2 font-weight-light">Optimisation des tournées de véhicules : programmation en (C/C++), Réalisation d’un robot en utilisant les méthodes d’ingénierie systèmes, programmation en JAVA, Développement d’un système de contrôle-commande d’un ascenseur en JAVA.</p>
+                  </li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+ </div>
+
+<div id="education">
+  <div class="container">
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <img alt="100x100" src="uni_logo.png"
+          data-holder-rendered="true"><br>
+      </div>
+      <div class="col-sm-8">
+        <p>Master Systèmes de Production Industriels Automatisés<br>Université de Bordeaux Sciences et Technologies</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 text-center">  
+      </div>
+      <div class="col-sm-8">
+        <p>Diplôme d'Ingénieure en Informatique Industrielle<br>EMSI - Ecole d'Ingénieurs</p><hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <img alt="100x100" src="logo_La_Manu.png"
+          data-holder-rendered="true"><br>
+      </div>
+      <div class="col-sm-8">
+        <p>Développement WEB .Net<br>LA MANU - Ecole des Métiers du Numérique</p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-sm-4 text-center">
+      </div>
+      <div class="col-sm-8">
+        <p>Anglais<br>American Language Center</p> 
+      </div>
+    </div>
+  </div>
+    <div class="row" id="home_pics">
+      <div class ="col-sm-12">
+        <div class="col-sm-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="companies.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="skills.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+    </div>
+ </div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="/bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+</body>
+</html
